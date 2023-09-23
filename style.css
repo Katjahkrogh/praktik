@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --orange: #f26849;
+  --black: #0d0800;
+  --white: white;
+}
+
+/* GENERELT */
+h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* FORSIDE */
+header {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-front {
+  max-width: 80vw;
+  margin-bottom: 30px;
+}
+
+.name {
+  color: var(--orange);
+}
+
+header img {
+  max-width: 80vw;
+  margin-bottom: 30px;
+}
+
+/* OM MIG */
+
+main {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#om {
+  padding: 30px;
+}
+
+.hr-long {
+  border: 0.5px solid var(--orange);
+  width: 70%;
+}
+
+/* MIN FRITID */
+
+#omFritid h2 {
+  padding: 30px;
+}
+
+#images {
+  display: flex;
+  overflow-y: scroll;
+  gap: 0.5em;
+}
+
+#images img {
+  max-width: 300px;
+}
+
+#textbox {
+  padding: 30px;
+}
+
+#fritid h3 {
+  margin-top: 30px;
+}
+
+/* KOMPETENCER */
+
+#short-left {
+  border: 0.5px solid var(--orange);
+  width: 60%;
+}
+
+#kompetencer {
+  padding: 30px;
+}
+
+.icon-line {
+  display: flex;
+  align-items: center; /* Ændret til align-items for at centrere både .icon og .icon-list */
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.komp {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 85%;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.icon {
+  width: 70px;
+  margin-top: -10px;
+}
+
+.icon-list {
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+
+li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+#com {
+  width: 50px;
+}
+
+#program {
+  margin-right: 50px;
+}
+
+/* PROJEKTER */
+
+#projects {
+  padding: 30px;
+}
+#short-right {
+  border: 0.5px solid var(--orange);
+  width: 60%;
+  margin-left: 40%;
+}

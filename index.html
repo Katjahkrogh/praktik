@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <title>Min personlige -og professionelle profil</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/profil_img.jpg" alt="Profil billede" />
+      <div id="text-front">
+        <h1>Hej, jeg hedder</h1>
+        <h1 class="name">Katja Hvid Krogh</h1>
+        <p>
+          Jeg søger et 10 ugers praktikophold indenfor Frontend design -og
+          udvikling, hvor drømmen er at få en masse erfaring, udfordre mig selv,
+          skabe nogen gode relationer samt udvikle mine kompetencer mest muligt.
+        </p>
+      </div>
+      <dotlottie-player
+        src="https://lottie.host/b02ce395-deba-4f12-91a7-0dd9d4aff07c/vfmf5NKuo4.json"
+        background="transparent"
+        speed="1"
+        style="width: 50px; height: 50px"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </header>
+    <main>
+      <section id="om">
+        <h2>Hvem er jeg?</h2>
+        <br />
+        <p>
+          Jeg studerer multimediedesign på KEA, og er på nuværende tidspunkt i
+          gang med mit 3. semester, hvor jeg har valgt valgfaget “Frontend
+          Design”.
+        </p>
+        <br />
+        <p>
+          Jeg er meget passioneret for at lære nye ting, og brænder for at skabe
+          -og udvikle digitale platforme, samt den bedst mulige brugeroplevelse.
+        </p>
+        <br />
+        <p>
+          Jeg er som person meget åben overfor nye udfordringer og
+          bekendtskaber, og jeg stræber konstant efter at være den bedste
+          version af mig selv.
+        </p>
+      </section>
+      <hr class="hr-long" />
+      <section id="omFritid">
+        <h2>Hvad laver jeg udenfor studiet?</h2>
+        <div id="images">
+          <img src="images/lily2.webp" alt="Lily og jeg" />
+          <img src="images/venner.webp" alt="Mig og mine veninder" />
+          <img src="images/rejse.webp" alt="Mig og min kæreste på rejse" />
+          <img src="images/lily1.jpg" alt="Lily og mig der læser bog" />
+        </div>
+        <dotlottie-player
+          src="https://lottie.host/30c83c79-82d1-4a63-a864-ab6d504bebd2/73TsVt5hZy.json"
+          background="transparent"
+          speed="1"
+          style="
+            width: 60px;
+            height: 60px;
+            rotate: 90deg;
+            margin-right: auto;
+            margin-left: auto;
+          "
+          loop
+          autoplay
+        ></dotlottie-player>
+        <div id="textbox">
+          <div id="job">
+            <h3>Studiejob</h3>
+            <p>
+              Ved siden af studiet arbejder jeg som studentermedhjælper i en
+              Backoffice afdeling hos Norlys TV & Internet. Min tid hos Norlys
+              har givet mig en stor forståelse for hvordan man med små
+              justeringer, kan skabe en stor forskel i en brugeroplevelse.
+            </p>
+            <br />
+            <p>
+              Arbejdet har derudover givet mig gode kompetencer indenfor
+              teambaseret arbejde, skriftlig kommunikation & kundekontakt.
+            </p>
+          </div>
+          <div id="fritid">
+            <h3>Min fritid</h3>
+            <p>
+              Det meste af min fritid bliver brugt sammen med min familie,
+              kæreste og venner - særligt min 1,5 årige niece optager meget af
+              min fritid.
+            </p>
+            <br />
+            <p>
+              Jeg elsker at se gode film, rejse, spise lækker mad, skabe nye
+              oplevelser, træne og generelt være aktiv.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr id="short-left" />
+      <section id="kompetencer">
+        <h2>Mine kompetencer</h2>
+        <section class="komp">
+          <div class="icon-line">
+            <img src="icons/code.svg" alt="Kode ikon" class="icon" />
+            <h3>Kodesprog & Frameworks</h3>
+          </div>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+          </ul>
+        </section>
+        <section class="komp">
+          <div class="icon-line">
+            <img src="icons/devices.svg" alt="Device ikon" class="icon" />
+            <h3>Tekniske færdigheder</h3>
+          </div>
+          <ul>
+            <li>UX / UI</li>
+            <li>Prototyping</li>
+            <li>Brugertest</li>
+            <li>Copywriting</li>
+          </ul>
+        </section>
+        <section class="komp">
+          <div class="icon-line">
+            <img src="icons/tablet.svg" alt="Computer ikon" id="com" />
+            <h3 id="program">Programmer</h3>
+          </div>
+          <ul>
+            <li>Git / Github</li>
+            <li>Figma</li>
+            <li>Photoshop</li>
+            <li>Adobe Illustrator</li>
+          </ul>
+        </section>
+      </section>
+      <hr id="short-right" />
+      <section id="projects">
+        <h2>Lidt af mit arbejde</h2>
+        <div id="to-do"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
