@@ -266,3 +266,31 @@ footer {
   padding: 30px;
   color: var(--white);
 }
+
+/* RESPONSIV */
+
+@media (min-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 100vh;
+    gap: 3em;
+  }
+  header img {
+    height: 100vh;
+    justify-content: left;
+    left: 0;
+  }
+
+  #text-front {
+    max-width: 600px;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+}
