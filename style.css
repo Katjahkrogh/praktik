@@ -159,6 +159,7 @@ li {
   gap: 1.5em;
   overflow-y: scroll;
   margin-right: 15px;
+  margin-left: 15px;
 }
 
 #projects h2 {
@@ -168,8 +169,11 @@ li {
 #projects h3 {
   font-weight: 400;
   margin-bottom: 0;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 5px;
+}
+
+#projects p {
+  padding: 5px;
 }
 
 #short-right {
@@ -181,6 +185,8 @@ li {
 .container {
   margin-bottom: 30px;
   cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 #to-do {
@@ -188,13 +194,27 @@ li {
   height: 300px;
   background-image: url(images/to-do.jpg);
   object-fit: fill;
-  border-radius: 10px;
 }
 
 #teddy {
   background-image: url(images/teddy.jpg);
   object-fit: fill;
-  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+#omada {
+  background-image: url(images/omada.jpg);
+  object-fit: fill;
+
+  width: 300px;
+  height: 300px;
+}
+
+#purely {
+  background-image: url(images/purely.jpg);
+  object-fit: fill;
+
   width: 300px;
   height: 300px;
 }
@@ -213,4 +233,36 @@ a {
 
 .flex img {
   width: 40px;
+}
+
+/* KONTAKT */
+
+#contact {
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+#contact p {
+  margin-top: 30px;
+}
+
+.flex2 {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
+}
+
+.flex2 img {
+  width: 35px;
+  height: 35px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background-color: var(--black);
+  padding: 30px;
+  color: var(--white);
 }
