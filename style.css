@@ -107,13 +107,17 @@ main {
   width: 60%;
 }
 
-#kompetencer {
-  padding: 30px;
+#kompetencer{
+    padding: 30px;
 }
+
+#kompetencer h2{
+    margin-bottom: 30px;
+  }
 
 .icon-line {
   display: flex;
-  align-items: center; /* Ændret til align-items for at centrere både .icon og .icon-list */
+  align-items: center;
   justify-content: center;
   gap: 0.5em;
 }
@@ -123,19 +127,18 @@ main {
   justify-items: center;
   align-items: center;
   flex-direction: column;
-  opacity: 85%;
-  padding: 30px;
-  border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .icon {
-  width: 70px;
+  width: 50px;
   margin-top: -10px;
 }
 
 .icon-list {
   line-height: 1.5em;
   font-size: 1.2rem;
+  max-width: 200px;
 }
 
 li {
@@ -160,6 +163,7 @@ li {
   overflow-y: scroll;
   margin-right: 15px;
   margin-left: 15px;
+  margin-bottom: 20px;
 }
 
 #projects h2 {
@@ -170,6 +174,7 @@ li {
   font-weight: 400;
   margin-bottom: 0;
   padding: 5px;
+  border-bottom: 1px solid var(--orange);
 }
 
 #projects p {
@@ -193,28 +198,26 @@ li {
   width: 300px;
   height: 300px;
   background-image: url(images/to-do.jpg);
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #teddy {
   background-image: url(images/teddy.jpg);
-  object-fit: fill;
+  object-fit: cover;
   width: 300px;
   height: 300px;
 }
 
 #omada {
   background-image: url(images/omada.jpg);
-  object-fit: fill;
-
+  object-fit: cover;
   width: 300px;
   height: 300px;
 }
 
 #purely {
   background-image: url(images/purely.jpg);
-  object-fit: fill;
-
+  object-fit: cover;
   width: 300px;
   height: 300px;
 }
@@ -267,12 +270,13 @@ footer {
   color: var(--white);
 }
 
+/* ------------------------------------------- */
+
 /* RESPONSIV */
 
-@media (min-width: 1200px) {
-
+@media (min-width: 800px) {
   /* HEADER */
-  
+
   header {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -299,7 +303,6 @@ footer {
   }
   dotlottie-player#scroll {
     justify-content: right;
-    margin-top: 650px;
   }
 
   /* OM MIG */
@@ -342,14 +345,14 @@ footer {
     justify-content: center;
     align-items: baseline;
     gap: 4em;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
-  #job{
+  #job {
     max-width: 45vw;
   }
 
-  #fritid{
+  #fritid {
     max-width: 45vw;
   }
 
@@ -357,7 +360,104 @@ footer {
     margin-top: 5px;
   }
 
-/* KOMPETANCER */
+  /* KOMPETANCER */
 
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .icon-line {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 70px;
+    margin-top: -10px;
+  }
+
+  .komp {
+    padding: 30px;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  #com {
+    width: 60px;
+  }
+
+  #program {
+    margin-right: 50px;
+  }
+
+  /* PROJEKTER */
+  #to-do,
+  #teddy,
+  #omada,
+  #purely {
+    width: 400px;
+    height: 400px;
+  }
+
+  #slide {
+    gap: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 50px;
+  }
+
+  #projects h2 {
+    padding: 50px;
+  }
+
+  #projects h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #projects p {
+    padding: 15px;
+    line-height: 1.5em;
+  }
+
+  .flex img {
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  /* KONTAKT */
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  #contact h2 {
+    padding: 20px;
+  }
+
+  #contact p {
+    max-width: 60vw;
+    text-align: center;
+  }
+
+  .flex2 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* FOOTER */
+
+  footer{
+    padding: 50px;
+  }
 }
