@@ -270,9 +270,12 @@ footer {
 /* RESPONSIV */
 
 @media (min-width: 1200px) {
+
+  /* HEADER */
+  
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     max-height: 100vh;
     gap: 3em;
   }
@@ -286,11 +289,75 @@ footer {
     max-width: 600px;
   }
 
-  h1{
+  h1 {
     font-size: 4rem;
   }
 
-  p{
+  p {
     font-size: 1.5rem;
+    line-height: 1.8em;
   }
+  dotlottie-player#scroll {
+    justify-content: right;
+    margin-top: 650px;
+  }
+
+  /* OM MIG */
+
+  h2 {
+    font-size: 3rem;
+    padding: 50px;
+  }
+
+  #om {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #om p {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  /* FRITID */
+
+  #omFritid h2 {
+    padding: 50px;
+  }
+
+  #images {
+    gap: 1em;
+  }
+
+  #images img {
+    max-width: 550px;
+  }
+
+  #textbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4em;
+    margin-bottom: 30px;
+  }
+
+  #job{
+    max-width: 45vw;
+  }
+
+  #fritid{
+    max-width: 45vw;
+  }
+
+  #fritid h3 {
+    margin-top: 5px;
+  }
+
+/* KOMPETANCER */
+
+
 }
