@@ -273,7 +273,7 @@ footer {
 
 /* RESPONSIV */
 
-@media (min-width: 850px) {
+@media (min-width: 700px) {
   /* HEADER */
 
   header {
