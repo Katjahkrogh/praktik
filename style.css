@@ -56,7 +56,7 @@ header {
 
 header img {
   max-width: 80vw;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* OM MIG */
@@ -301,7 +301,7 @@ footer {
     line-height: 1.8em;
   }
   dotlottie-player#scroll {
-    justify-content: right;
+    margin-top: 0;
   }
 
   /* OM MIG */
