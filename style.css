@@ -47,7 +47,7 @@ header {
 }
 
 #text-front {
-  max-width: 70vw;
+  max-width: 83vw;
 }
 
 .name {
@@ -55,7 +55,7 @@ header {
 }
 
 header img {
-  max-width: 70vw;
+  max-width: 80vw;
   margin-bottom: 20px;
 }
 
@@ -106,13 +106,13 @@ main {
   width: 60%;
 }
 
-#kompetencer{
-    padding: 30px;
+#kompetencer {
+  padding: 30px;
 }
 
-#kompetencer h2{
-    margin-bottom: 30px;
-  }
+#kompetencer h2 {
+  margin-bottom: 30px;
+}
 
 .icon-line {
   display: flex;
@@ -456,7 +456,7 @@ footer {
 
   /* FOOTER */
 
-  footer{
+  footer {
     padding: 50px;
   }
 }
