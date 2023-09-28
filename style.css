@@ -44,7 +44,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  scroll-behavior: smooth;
 }
 
 #text-front {
