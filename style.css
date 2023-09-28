@@ -39,7 +39,7 @@ h3 {
 header {
   background-color: var(--black);
   color: var(--white);
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
