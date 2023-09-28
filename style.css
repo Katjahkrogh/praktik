@@ -15,7 +15,7 @@
 h1 {
   font-weight: 600;
   margin-bottom: 10px;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 p {
@@ -27,7 +27,7 @@ p {
 h2 {
   font-weight: 300;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -47,8 +47,7 @@ header {
 }
 
 #text-front {
-  max-width: 80vw;
-  margin-bottom: 30px;
+  max-width: 70vw;
 }
 
 .name {
@@ -56,8 +55,8 @@ header {
 }
 
 header img {
-  max-width: 80vw;
-  margin-bottom: 30px;
+  max-width: 70vw;
+  margin-bottom: 20px;
 }
 
 /* OM MIG */
@@ -320,7 +319,7 @@ footer {
   }
 
   #om p {
-    max-width: 70vw;
+    max-width: 55vw;
     margin: 0 auto;
     margin-bottom: 30px;
   }
