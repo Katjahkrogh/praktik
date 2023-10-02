@@ -51,9 +51,13 @@ header {
   align-items: center;
 }
 
-#text-front {
+#text-front{
   max-width: 80vw;
-  margin-top: -10px;
+  margin-top: -5px;
+}
+
+#text-front p{
+  max-width: 75vw;
 }
 
 .name {
