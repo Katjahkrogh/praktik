@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-wrap: pretty;
 }
 
 :root {
@@ -15,39 +18,42 @@
 h1 {
   font-weight: 600;
   margin-bottom: 10px;
-  font-size: 2.1rem;
+  font-size: 2.2rem;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 p {
   line-height: 1.5em;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h2 {
   font-weight: 300;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 h3 {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 /* FORSIDE */
 header {
   background-color: var(--black);
   color: var(--white);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+  height: 100svh;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
 
 #text-front {
-  max-width: 83vw;
+  max-width: 75vw;
+  margin-top: -25px;
 }
 
 .name {
@@ -55,8 +61,7 @@ header {
 }
 
 header img {
-  max-width: 80vw;
-  margin-bottom: 15px;
+  max-width: 75vw;
 }
 
 /* OM MIG */
@@ -106,52 +111,28 @@ main {
   width: 60%;
 }
 
-#kompetencer {
+#kompetencer h2 {
   padding: 30px;
 }
 
-#kompetencer h2 {
-  margin-bottom: 30px;
-}
-
-.icon-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: baseline;
+  margin-left: 8vw;
 }
 
 .komp {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.icon {
-  width: 50px;
-  margin-top: -10px;
-}
-
-.icon-list {
-  line-height: 1.5em;
-  font-size: 1.2rem;
+  margin-bottom: 30px;
   max-width: 200px;
 }
 
 li {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5em;
-}
-
-#com {
-  width: 50px;
-}
-
-#program {
-  margin-right: 50px;
+  margin-left: 18px;
 }
 
 /* PROJEKTER */
@@ -273,61 +254,60 @@ footer {
 
 /* RESPONSIV */
 
-@media (min-width: 850px) {
+@media (min-width: 500px) {
+  header img {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 750px) {
   /* HEADER */
 
   header {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    max-height: 100vh;
-    gap: 3em;
+    grid-template-columns: 1fr 1fr auto;
+    max-height: 100svh;
+    gap: 1em;
   }
   header img {
-    height: 100vh;
-    justify-content: left;
-    left: 0;
+    width: 50vw;
   }
 
   #text-front {
-    max-width: 47vw;
+    max-width: 40vw;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8em;
-  }
-  dotlottie-player#scroll {
-    margin-top: 0;
   }
 
   /* OM MIG */
 
   h2 {
-    font-size: 3rem;
-    padding: 50px;
+    font-size: 2rem;
+    padding: 30px;
   }
 
   #om {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
   }
 
   #om p {
-    max-width: 55vw;
-    margin: 0 auto;
+    max-width: 75vw;
     margin-bottom: 30px;
   }
 
   /* FRITID */
 
   #omFritid h2 {
-    padding: 50px;
+    padding: 30px;
   }
 
   #images {
@@ -335,7 +315,7 @@ footer {
   }
 
   #images img {
-    max-width: 550px;
+    max-width: 300px;
   }
 
   #textbox {
@@ -343,49 +323,40 @@ footer {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: baseline;
-    gap: 4em;
-    margin-bottom: 50px;
+    gap: 3em;
+    margin-bottom: 30px;
+  }
+
+  #textbox h3 {
+    font-size: 1.5rem;
   }
 
   #job {
-    max-width: 45vw;
+    max-width: 40vw;
   }
 
   #fritid {
-    max-width: 45vw;
-  }
-
-  #fritid h3 {
-    margin-top: 5px;
+    max-width: 40vw;
   }
 
   /* KOMPETANCER */
 
+  #kompetencer h2 {
+    padding-bottom: 30px;
+  }
+
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
   }
 
-  .icon-line {
-    width: 300px;
-    margin-bottom: 15px;
-  }
-
-  .icon {
-    width: 70px;
-    margin-top: -10px;
-  }
-
-  li {
+  .grid h3 {
     font-size: 1.5rem;
   }
 
-  #com {
-    width: 60px;
-  }
-
-  #program {
-    margin-right: 50px;
+  li {
+    font-size: 1.3rem;
   }
 
   /* PROJEKTER */
@@ -394,22 +365,21 @@ footer {
   #omada,
   #purely {
     width: 400px;
-    height: 400px;
+    height: 350px;
   }
 
   #slide {
     gap: 2em;
-    margin-right: 2em;
     margin-left: 2em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   #projects h2 {
-    padding: 50px;
+    padding: 30px;
   }
 
   #projects h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     margin-left: 15px;
     margin-top: 15px;
@@ -421,7 +391,7 @@ footer {
   }
 
   .flex img {
-    width: 50px;
+    width: 40px;
     margin-top: 10px;
     margin-right: 5px;
   }
@@ -454,5 +424,106 @@ footer {
 
   footer {
     padding: 50px;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* HEADER */
+
+  header {
+    gap: 3em;
+  }
+  header img {
+    width: 40vw;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* OM MIG */
+
+  h2 {
+    font-size: 3rem;
+    padding: 50px;
+  }
+
+  #om p {
+    margin-bottom: 50px;
+  }
+
+  /* FRITID */
+
+  #omFritid h2 {
+    padding: 50px;
+  }
+
+  #images img {
+    max-width: 450px;
+  }
+
+  #textbox {
+    margin-bottom: 50px;
+  }
+
+  #textbox h3 {
+    font-size: 1.8rem;
+  }
+
+  #job {
+    max-width: 45vw;
+  }
+
+  #fritid {
+    max-width: 45vw;
+  }
+
+  #fritid h3 {
+    margin-top: 5px;
+  }
+
+  /* KOMPETANCER */
+
+  #kompetencer h2 {
+    padding-bottom: 50px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+  }
+
+  .grid h3 {
+    font-size: 1.8rem;
+  }
+
+  li {
+    font-size: 1.6rem;
+  }
+
+  /* PROJEKTER */
+  #to-do,
+  #teddy,
+  #omada,
+  #purely {
+    width: 400px;
+    height: 400px;
+  }
+
+  #slide {
+    margin-bottom: 50px;
+  }
+
+  #projects h2 {
+    padding: 50px;
+  }
+
+  #projects h3 {
+    font-size: 1.8rem;
   }
 }

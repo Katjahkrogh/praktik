@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <img src="images/profil_img.jpg" alt="Profil billede" />
+      <img src="images/profil_img-2.jpg" alt="Profil billede" />
       <div id="text-front">
         <h1>Hej, jeg hedder</h1>
         <h1 class="name">Katja Hvid Krogh</h1>
@@ -27,8 +27,14 @@
       <dotlottie-player
         src="https://lottie.host/b02ce395-deba-4f12-91a7-0dd9d4aff07c/vfmf5NKuo4.json"
         background="transparent"
-        speed="1"
-        style="width: 45px; height: 45px; margin-left: auto; margin-right: 0; margin-top: -50px;"
+        speed="0.5"
+        style="
+          width: 45px;
+          height: 45px;
+          margin-left: auto;
+          margin-right: 0;
+          margin-top: -50px;
+        "
         loop
         autoplay
         id="scroll"
@@ -67,7 +73,7 @@
         <dotlottie-player
           src="https://lottie.host/30c83c79-82d1-4a63-a864-ab6d504bebd2/73TsVt5hZy.json"
           background="transparent"
-          speed="1"
+          speed="0.8"
           style="
             width: 60px;
             height: 60px;
@@ -113,23 +119,23 @@
         <h2>Mine kompetencer</h2>
         <div class="grid">
           <section class="komp">
-            <div class="icon-line">
-              <img src="icons/code.svg" alt="Kode ikon" class="icon" />
-              <h3>Kodesprog & Frameworks</h3>
-            </div>
+            <h3>Kodesprog</h3>
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
               <li>Javascript</li>
+            </ul>
+          </section>
+          <section class="komp">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Astro</li>
               <li>React</li>
               <li>Next.js</li>
             </ul>
           </section>
           <section class="komp">
-            <div class="icon-line">
-              <img src="icons/devices.svg" alt="Device ikon" class="icon" />
-              <h3>Tekniske færdigheder</h3>
-            </div>
+            <h3>Tekniske færdigheder</h3>
             <ul>
               <li>UX / UI</li>
               <li>Prototyping</li>
@@ -138,15 +144,10 @@
             </ul>
           </section>
           <section class="komp">
-            <div class="icon-line">
-              <img src="icons/tablet.svg" alt="Computer ikon" id="com" />
-              <h3 id="program">Programmer</h3>
-            </div>
+            <h3>Programmer</h3>
             <ul>
               <li>Git / Github</li>
               <li>Figma</li>
-              <li>Photoshop</li>
-              <li>Adobe Illustrator</li>
             </ul>
           </section>
         </div>
