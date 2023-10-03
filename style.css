@@ -77,11 +77,19 @@ main {
 
 #om {
   padding: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .hr-long {
   border: 0.5px solid var(--orange);
   width: 70%;
+}
+
+#om p {
+  max-width: 90vw;
+  margin-top: 30px;
 }
 
 /* MIN FRITID */
@@ -303,15 +311,8 @@ footer {
     padding: 30px;
   }
 
-  #om {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-
   #om p {
-    max-width: 75vw;
-    margin-bottom: 30px;
+    max-width: 65vw;
   }
 
   /* FRITID */
@@ -453,11 +454,11 @@ footer {
 
   h2 {
     font-size: 3rem;
-    padding: 50px;
+    padding: 30px;
   }
 
   #om p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   /* FRITID */
