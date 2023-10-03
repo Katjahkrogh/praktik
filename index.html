@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
+    <!-- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
     <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
@@ -14,7 +16,11 @@
   </head>
   <body>
     <header>
-      <img src="images/profil_img-2.jpg" alt="Profil billede" />
+      <img
+        src="images/profil_img-2.jpg"
+        alt="Profil billede"
+        class="header-img"
+      />
       <div id="text-front">
         <h1>Hej, jeg hedder</h1>
         <h1 class="name">Katja Hvid Krogh</h1>
@@ -27,14 +33,7 @@
       <dotlottie-player
         src="https://lottie.host/b02ce395-deba-4f12-91a7-0dd9d4aff07c/vfmf5NKuo4.json"
         background="transparent"
-        speed="0.5"
-        style="
-          width: 40px;
-          height: 40px;
-          margin-left: auto;
-          margin-right: 0px;
-          margin-top: -50px;
-        "
+        speed="0.8"
         loop
         autoplay
         id="scroll"
@@ -132,19 +131,19 @@
             </ul>
           </section>
           <section class="komp">
+            <h3>Programmer</h3>
+            <ul>
+              <li>Git / Github</li>
+              <li>Figma</li>
+            </ul>
+          </section>
+          <section class="komp">
             <h3>Tekniske færdigheder</h3>
             <ul>
               <li>UX / UI</li>
               <li>Prototyping</li>
               <li>Brugertest</li>
               <li>Copywriting</li>
-            </ul>
-          </section>
-          <section class="komp">
-            <h3>Programmer</h3>
-            <ul>
-              <li>Git / Github</li>
-              <li>Figma</li>
             </ul>
           </section>
         </div>
@@ -155,15 +154,13 @@
         <section id="slide">
           <div class="container">
             <a href="https://omada-gruppe2.netlify.app" target="_blank">
-              <div id="omada">
-                <img src="" alt="" />
-              </div>
+                <img src="images/omada-web.webp" alt="omada" id="omada"/>
               <div class="flex">
                 <h3>Omada Wine & Deli</h3>
                 <img src="icons/pil.svg" alt="pil" />
               </div>
               <p>
-                Udvikling af website med fokus på deres delikatesse forretning.
+                Udvikling af website med fokus på Omada´s delikatesse forretning.
               </p>
             </a>
           </div>
