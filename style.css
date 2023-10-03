@@ -10,7 +10,7 @@
 
 :root {
   --orange: #f26849;
-  --black: #0d0800;
+  --black: #000;
   --white: white;
 }
 
@@ -51,12 +51,12 @@ header {
   align-items: center;
 }
 
-#text-front{
+#text-front {
   max-width: 80vw;
   margin-top: -5px;
 }
 
-#text-front p{
+#text-front p {
   max-width: 75vw;
 }
 
@@ -124,7 +124,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-items: baseline;
-  margin-left: 8vw;
+  margin-left: 10vw;
 }
 
 .komp {
@@ -133,7 +133,7 @@ main {
 }
 
 li {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1rem;
   line-height: 1.5em;
   margin-left: 18px;
@@ -260,7 +260,13 @@ footer {
 
 @media (min-width: 500px) {
   header img {
-    width: 50vw;
+    width: 60vw;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
   }
 }
 
@@ -347,12 +353,6 @@ footer {
 
   #kompetencer h2 {
     padding-bottom: 30px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 30px;
   }
 
   .grid h3 {
