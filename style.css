@@ -46,10 +46,12 @@ header {
   display: grid;
   justify-content: center;
   align-items: center;
+  max-width: 1500px;
+  overflow-y: hidden;
 }
 
 #text-front {
-  max-width: 83vw;
+  max-width: 90vw;
   margin-top: -5px;
 }
 
@@ -80,6 +82,7 @@ header {
 main {
   background-color: var(--white);
   color: var(--black);
+  max-width: 1500px;
 }
 
 #om {
@@ -405,13 +408,9 @@ footer {
 
   #projects h3 {
     font-size: 1.2rem;
-    margin-bottom: 0;
-    margin-left: 15px;
-    margin-top: 15px;
   }
 
   #projects p {
-    padding: 15px;
     line-height: 1.5em;
   }
 
@@ -421,7 +420,6 @@ footer {
 
   .flex img {
     width: 40px;
-    margin-top: 10px;
     margin-right: 5px;
   }
 
