@@ -46,7 +46,6 @@ header {
   display: grid;
   justify-content: center;
   align-items: center;
-  max-width: 1500px;
   overflow-y: hidden;
 }
 
@@ -82,7 +81,6 @@ header {
 main {
   background-color: var(--white);
   color: var(--black);
-  max-width: 1500px;
 }
 
 #om {
@@ -127,6 +125,14 @@ main {
 
 #fritid h3 {
   margin-top: 30px;
+}
+
+#swipe{
+width: 60px;
+height: 60px;
+rotate: 90deg;
+margin-right: auto;
+margin-left: auto;
 }
 
 /* KOMPETENCER */
@@ -327,7 +333,6 @@ footer {
   #scroll {
     width: 55px;
     height: 55px;
-    margin-left: auto;
     margin-right: 0px;
     margin-top: -40px;
   }
@@ -547,5 +552,98 @@ footer {
 
   #projects h3 {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* HEADER */
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .header-img {
+    width: 45vw;
+  }
+
+  #scroll{
+    width: 70px;
+    height: 70px;
+  }
+
+  /* OM MIG */
+
+  #om {
+    padding: 50px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding: 60px;
+  }
+
+  #om p {
+    margin-bottom: 50px;
+    max-width: 60vw;
+  }
+
+  /* FRITID */
+
+  #images img {
+    max-width: 600px;
+  }
+
+  #textbox {
+    margin-bottom: 60px;
+  }
+
+  #textbox h3 {
+    font-size: 2.2rem;
+  }
+
+  #fritid h3 {
+    margin-top: 15px;
+  }
+
+  #swipe{
+    width: 90px;
+    height: 90px;
+    }
+
+  /* KOMPETANCER */
+
+  .grid h3 {
+    font-size: 2.2rem;
+    margin-top: 30px;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  #kompetencer {
+    padding: 30px;
+  }
+
+  /* PROJEKTER */
+  .projects-img {
+    width: 600px;
+    height: 600px;
+  }
+
+  #slide {
+    margin-bottom: 60px;
+  }
+
+  #projects h3 {
+    font-size: 2.2rem;
+  }
+
+  .flex img {
+    width: 60px;
   }
 }
