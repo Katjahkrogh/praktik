@@ -175,12 +175,12 @@ li {
 #projects h3 {
   font-weight: 400;
   margin-bottom: 0;
-  padding: 5px;
+  padding: 15px;
   border-bottom: 1px solid var(--orange);
 }
 
 #projects p {
-  padding: 5px;
+  padding: 15px;
 }
 
 #short-right {
@@ -193,7 +193,8 @@ li {
   margin-bottom: 30px;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  width: fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
 }
 
 .projects-img{
@@ -203,6 +204,7 @@ li {
   filter: grayscale(100%);
   aspect-ratio: 1;
   transition: 150ms;
+  border-radius: 20px 20px 0px 0px;
 }
 
 #to-do:hover {
@@ -390,10 +392,7 @@ footer {
     margin-bottom: 30px;
   }
   /* PROJEKTER */
-  #to-do,
-  #teddy,
-  #omada,
-  #purely {
+  .projects-img {
     width: 400px;
     height: 350px;
   }
@@ -539,10 +538,7 @@ footer {
   }
 
   /* PROJEKTER */
-  #to-do,
-  #teddy,
-  #omada,
-  #purely {
+  .projects-img {
     width: 400px;
     height: 400px;
   }
