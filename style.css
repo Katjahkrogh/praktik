@@ -555,7 +555,7 @@ footer {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
   /* HEADER */
 
   h1 {
@@ -599,6 +599,16 @@ footer {
 
   #textbox {
     margin-bottom: 60px;
+  }
+
+  #job {
+    max-width: 40vw;
+    margin-left: 50px
+  }
+
+  #fritid {
+    max-width: 40vw;
+    margin-left: 50px
   }
 
   #textbox h3 {
@@ -645,5 +655,11 @@ footer {
 
   .flex img {
     width: 60px;
+  }
+
+  /* KONTAKT */
+  .flex2 img {
+    width: 50px;
+    height: 50px;
   }
 }
