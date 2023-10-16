@@ -1,3 +1,33 @@
+gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+  gsap.from("#textbox", {
+    y: 50,
+    stagger: 0.1,
+    ease: "ease.in",
+    opacity: 0,
+    duration: 3,
+    scrollTrigger: {
+      trigger: "#textbox",
+      start: "top 50%",
+      end: "+=300px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#om p", {
+    y: 50,
+    stagger: 0.1,
+    ease: "ease.in",
+    opacity: 0,
+    duration: 3,
+    scrollTrigger: {
+      trigger: "#om p",
+      start: "top center",
+      end: "+=250px",
+      scrub: true,
+    },
+  });
+});
+
 gsap
   .matchMedia()
   .add("(min-width:800px) and (prefers-reduced-motion: no-preference)", () => {
@@ -23,7 +53,6 @@ gsap
         trigger: "h1",
         start: "top 50%",
         end: "+=200px",
-        markers: true,
       },
     });
 
@@ -41,13 +70,13 @@ gsap
         trigger: "#text-front p",
         start: "top center",
         end: "bottom 50%",
-        markers: true,
       },
     });
 
     gsap.from(".grid", {
-      x: 1500,
+      x: 400,
       stagger: 0.1,
+      overflow: "hidden",
       ease: "ease.in",
       duration: 3,
       scrollTrigger: {
@@ -55,7 +84,6 @@ gsap
         start: "top center",
         end: "+=250px",
         scrub: true,
-        markers: true,
       },
     });
   });
