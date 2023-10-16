@@ -14,7 +14,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   //FRITID TEKST
   gsap.from("#textbox", {
-    y: 80,
+    y: 50,
     stagger: 0.1,
     ease: "ease.in",
     opacity: 0,
@@ -29,28 +29,13 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   // OM MIG TEKST
   gsap.from("#om p", {
-    y: 80,
+    y: 50,
     stagger: 0.1,
     ease: "ease.in",
     opacity: 0,
     duration: 3,
     scrollTrigger: {
       trigger: "#om p",
-      start: "top center",
-      end: "+=250px",
-      scrub: true,
-    },
-  });
-
-  // KOMPETENCER
-  gsap.from(".grid", {
-    x: 1500,
-    stagger: 0.1,
-    overflow: "hidden",
-    ease: "ease.in",
-    duration: 3,
-    scrollTrigger: {
-      trigger: ".grid",
       start: "top center",
       end: "+=250px",
       scrub: true,
@@ -91,6 +76,21 @@ gsap
       x: 600,
       scale: 0.2,
       duration: 2,
+    });
+
+    // KOMPETENCER
+    gsap.from(".grid", {
+      x: 1500,
+      stagger: 0.1,
+      overflow: "hidden",
+      ease: "ease.in",
+      duration: 3,
+      scrollTrigger: {
+        trigger: ".grid",
+        start: "top center",
+        end: "+=250px",
+        scrub: true,
+      },
     });
   });
 
