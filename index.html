@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
-    <!-- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
     <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
@@ -17,7 +15,7 @@
   <body>
     <header>
       <img
-        src="images/profil_img-2.jpg"
+        src="images/profil_img-2.png"
         alt="Profil billede"
         class="header-img"
       />
@@ -104,33 +102,33 @@
         </div>
       </section>
       <hr id="short-left" />
-      <section id="kompetencer">
+      <article id="kompetencer">
         <h2>Mine kompetencer</h2>
         <div class="grid">
-          <section class="komp">
+          <div class="komp">
             <h3>Kodesprog</h3>
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
               <li>Javascript</li>
             </ul>
-          </section>
-          <section class="komp">
+          </div>
+          <div class="komp">
             <h3>Frameworks</h3>
             <ul>
               <li>Astro</li>
               <li>React</li>
               <li>Next.js</li>
             </ul>
-          </section>
-          <section class="komp">
+          </div>
+          <div class="komp">
             <h3>Programmer</h3>
             <ul>
               <li>Git / Github</li>
               <li>Figma</li>
             </ul>
-          </section>
-          <section class="komp">
+          </div>
+          <div class="komp">
             <h3>Tekniske færdigheder</h3>
             <ul>
               <li>UX / UI</li>
@@ -138,13 +136,13 @@
               <li>Brugertest</li>
               <li>Copywriting</li>
             </ul>
-          </section>
+          </div>
         </div>
-      </section>
+      </article>
       <hr id="short-right" />
       <article id="projects">
         <h2>Lidt af mit arbejde</h2>
-        <section id="slide">
+        <div id="slide">
           <div class="container">
             <a href="https://omada-gruppe2.netlify.app" target="_blank">
               <img
@@ -223,7 +221,7 @@
               </p>
             </a>
           </div>
-        </section>
+        </div>
       </article>
       <hr class="hr-long" />
       <section id="contact">
@@ -260,5 +258,8 @@
     <footer>
       <p>@katjahvidkrogh</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </body>
 </html>
