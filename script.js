@@ -46,6 +46,17 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   const content = document.querySelector("#kompetencer");
   const h2 = document.querySelector("#kompetencer h2");
   const text = document.querySelectorAll(".komp");
+  const h3 = document.querySelectorAll(".komp h3");
+
+  gsap.to(h3, {
+    scrollTrigger: {
+      trigger: content,
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+    },
+    color: "#f26849",
+  });
 
   gsap.to(text, {
     scrollTrigger: {
