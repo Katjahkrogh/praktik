@@ -1,3 +1,4 @@
+//ALLE SKÆRME
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   // FORSIDE TEKST
   gsap.from("#text-front p", {
@@ -57,6 +58,8 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   });
 });
 
+
+// SKÆRME OVER 800px
 gsap
   .matchMedia()
   .add("(min-width:800px) and (prefers-reduced-motion: no-preference)", () => {
