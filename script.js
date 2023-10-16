@@ -14,7 +14,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   //FRITID TEKST
   gsap.from("#textbox", {
-    y: 50,
+    y: 80,
     stagger: 0.1,
     ease: "ease.in",
     opacity: 0,
@@ -29,7 +29,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   // OM MIG TEKST
   gsap.from("#om p", {
-    y: 50,
+    y: 80,
     stagger: 0.1,
     ease: "ease.in",
     opacity: 0,
@@ -44,7 +44,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   // KOMPETENCER
   gsap.from(".grid", {
-    x: 400,
+    x: 1500,
     stagger: 0.1,
     overflow: "hidden",
     ease: "ease.in",
@@ -57,7 +57,6 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     },
   });
 });
-
 
 // SKÆRME OVER 800px
 gsap
