@@ -1,4 +1,17 @@
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+  // FORSIDE TEKST
+  gsap.from("#text-front p", {
+    x: 500,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#text-front p",
+      start: "top center",
+      end: "bottom 50%",
+    },
+  });
+
+  //FRITID TEKST
   gsap.from("#textbox", {
     y: 50,
     stagger: 0.1,
@@ -13,6 +26,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     },
   });
 
+  // OM MIG TEKST
   gsap.from("#om p", {
     y: 50,
     stagger: 0.1,
@@ -27,6 +41,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     },
   });
 
+  // KOMPETENCER
   gsap.from(".grid", {
     x: 400,
     stagger: 0.1,
@@ -75,19 +90,6 @@ gsap
       scale: 0.2,
       duration: 2,
     });
-
-    gsap.from("#text-front p", {
-      x: 500,
-      opacity: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: "#text-front p",
-        start: "top center",
-        end: "bottom 50%",
-      },
-    });
-
- 
   });
 
 // STOR SKÆRM >1700px
