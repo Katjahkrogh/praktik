@@ -529,6 +529,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
+    overflow: hidden;
   }
 
   .grid h3 {
@@ -646,10 +647,6 @@ footer {
 
   #kompetencer {
     padding: 30px;
-  }
-
-  .grid {
-    overflow-y: hidden;
   }
 
   /* PROJEKTER */

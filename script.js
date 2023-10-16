@@ -41,6 +41,57 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       scrub: true,
     },
   });
+
+  // KOMPETENCER
+  const content = document.querySelector("#kompetencer");
+  const h2 = document.querySelector("#kompetencer h2");
+  const text = document.querySelectorAll(".komp");
+
+  gsap.to(text, {
+    scrollTrigger: {
+      trigger: content,
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+    },
+    color: "white",
+  });
+
+  gsap.to(h2, {
+    scrollTrigger: {
+      trigger: content,
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+    },
+    color: "white",
+  });
+
+  gsap.to(content, {
+    scrollTrigger: {
+      trigger: content,
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+    },
+    backgroundColor: "black",
+  });
+
+  gsap.from(".grid", {
+    scale: 0.5,
+    opacity: 0,
+    y: 50,
+    stagger: 0.1,
+    overflow: "hidden",
+    ease: "ease.in",
+    duration: 3,
+    scrollTrigger: {
+      trigger: ".grid",
+      start: "top 70%",
+      end: "+=200px",
+      scrub: true,
+    },
+  });
 });
 
 // SKÆRME OVER 800px
@@ -76,21 +127,6 @@ gsap
       x: 600,
       scale: 0.2,
       duration: 2,
-    });
-
-    // KOMPETENCER
-    gsap.from(".grid", {
-      x: 1500,
-      stagger: 0.1,
-      overflow: "hidden",
-      ease: "ease.in",
-      duration: 3,
-      scrollTrigger: {
-        trigger: ".grid",
-        start: "top center",
-        end: "+=250px",
-        scrub: true,
-      },
     });
   });
 
