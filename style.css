@@ -648,6 +648,10 @@ footer {
     padding: 30px;
   }
 
+  .grid {
+    overflow-y: hidden;
+  }
+
   /* PROJEKTER */
   .projects-img {
     width: 600px;
