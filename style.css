@@ -565,7 +565,7 @@ footer {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   /* HEADER */
 
   h1 {
@@ -577,7 +577,8 @@ footer {
   }
 
   .header-img {
-    width: 30vw;
+    max-height: 100dvh;
+    max-width: 35vw;
   }
 
   #scroll {
