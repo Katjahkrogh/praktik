@@ -578,6 +578,7 @@ footer {
 
   .header-img {
     height: 80dvh;
+    aspect-ratio: 1;
   }
 
   #scroll {
