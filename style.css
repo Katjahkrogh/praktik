@@ -576,8 +576,7 @@ footer {
   }
 
   .header-img {
-    max-height: 80dvh;
-    width: fit-content;
+    height: 80dvh;
   }
 
   #scroll {
