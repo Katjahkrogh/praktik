@@ -26,6 +26,20 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       scrub: true,
     },
   });
+
+  gsap.from(".grid", {
+    x: 400,
+    stagger: 0.1,
+    overflow: "hidden",
+    ease: "ease.in",
+    duration: 3,
+    scrollTrigger: {
+      trigger: ".grid",
+      start: "top center",
+      end: "+=250px",
+      scrub: true,
+    },
+  });
 });
 
 gsap
@@ -73,19 +87,7 @@ gsap
       },
     });
 
-    gsap.from(".grid", {
-      x: 400,
-      stagger: 0.1,
-      overflow: "hidden",
-      ease: "ease.in",
-      duration: 3,
-      scrollTrigger: {
-        trigger: ".grid",
-        start: "top center",
-        end: "+=250px",
-        scrub: true,
-      },
-    });
+ 
   });
 
 // STOR SKÆRM >1700px
