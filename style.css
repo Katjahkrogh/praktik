@@ -191,6 +191,13 @@ li {
   padding: 15px;
 }
 
+.small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--orange);
+  border-radius: 0px 0px 20px 20px;
+}
+
 #short-right {
   border: 0.5px solid var(--orange);
   width: 60%;
@@ -427,6 +434,10 @@ footer {
     margin-right: 5px;
   }
 
+  .small {
+    font-size: 0.9rem;
+  }
+
   /* KONTAKT */
 
   #info {
@@ -478,7 +489,7 @@ footer {
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   /* OM MIG */
@@ -546,11 +557,6 @@ footer {
   }
 
   /* PROJEKTER */
-  .container:hover {
-    transform: scale(1.05);
-    border-radius: 20px;
-  }
-
   .projects-img {
     width: 400px;
     height: 400px;
@@ -563,17 +569,21 @@ footer {
   #projects h3 {
     font-size: 1.4rem;
   }
+
+  .small {
+    font-size: 1rem;
+  }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1750px) {
   /* HEADER */
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .header-img {
@@ -642,6 +652,10 @@ footer {
     margin-top: 30px;
   }
 
+  .grid {
+    padding: 10px;
+  }
+
   li {
     font-size: 2rem;
   }
@@ -667,6 +681,10 @@ footer {
 
   .flex img {
     width: 60px;
+  }
+
+  .small {
+    font-size: 1.3rem;
   }
 
   /* KONTAKT */
