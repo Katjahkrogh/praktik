@@ -2,25 +2,27 @@
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   //FRITID TEKST
   gsap.from("#textbox", {
-    ease: "linear",
+    ease: "linear.in",
     opacity: 0,
+    y: 25,
     scrollTrigger: {
       trigger: "#textbox",
       start: "top 50%",
       end: "+=100px",
-      scrub: 0.2,
+      scrub: 0.5,
     },
   });
 
   // OM MIG TEKST
   gsap.from("#om p", {
-    ease: "linear",
+    ease: "linear.in",
     opacity: 0,
+    y: 25,
     scrollTrigger: {
       trigger: "#om p",
       start: "top 50%",
       end: "+=100px",
-      scrub: 0.2,
+      scrub: 0.5,
     },
   });
 
@@ -80,7 +82,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       trigger: ".grid",
       start: "top 80%",
       end: "+=300px",
-      scrub: 0.2,
+      scrub: 0.3,
     },
   });
 });
