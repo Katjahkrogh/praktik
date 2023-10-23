@@ -51,7 +51,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       trigger: content,
       start: "top center",
       end: "bottom center",
-      scrub: 1,
+      scrub: 0.5,
     },
     color: "#f26849",
   });
@@ -61,7 +61,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       trigger: content,
       start: "top center",
       end: "bottom center",
-      scrub: 1,
+      scrub: 0.5,
     },
     color: "white",
   });
@@ -71,7 +71,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       trigger: content,
       start: "top center",
       end: "bottom center",
-      scrub: 1,
+      scrub: 0.5,
     },
     color: "white",
   });
@@ -81,7 +81,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
       trigger: content,
       start: "top center",
       end: "bottom center",
-      scrub: 1,
+      scrub: 0.5,
     },
     backgroundColor: "black",
   });
@@ -92,13 +92,13 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     y: 50,
     stagger: 0.1,
     overflow: "hidden",
-    ease: "ease.in",
+    ease: "linear",
     duration: 3,
     scrollTrigger: {
       trigger: ".grid",
       start: "top 70%",
-      end: "+=200px",
-      scrub: true,
+      end: "+=150px",
+      scrub: 0.5,
     },
   });
 });
