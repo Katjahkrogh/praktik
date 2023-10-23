@@ -1,28 +1,16 @@
 //ALLE SKÆRME
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
-  // FORSIDE TEKST
-  gsap.from("#text-front p", {
-    x: 200,
-    opacity: 0,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#text-front p",
-      start: "top center",
-      end: "bottom 50%",
-    },
-  });
-
   //FRITID TEKST
   gsap.from("#textbox", {
     y: 50,
     ease: "linear",
     opacity: 0,
-    duration: 3,
+    // duration: 2,
     scrollTrigger: {
       trigger: "#textbox",
       start: "top 50%",
-      end: "+=300px",
-      scrub: 0.5,
+      end: "+=100px",
+      scrub: 0.2,
     },
   });
 
@@ -31,12 +19,12 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     y: 50,
     ease: "linear",
     opacity: 0,
-    duration: 3,
+    // duration: 2,
     scrollTrigger: {
       trigger: "#om p",
       start: "top center",
-      end: "+=250px",
-      scrub: 0.5,
+      end: "+=100px",
+      scrub: 0.2,
     },
   });
 
@@ -97,7 +85,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     scrollTrigger: {
       trigger: ".grid",
       start: "top 70%",
-      end: "+=150px",
+      end: "+=100px",
       scrub: 0.5,
     },
   });
@@ -137,6 +125,18 @@ gsap
       scale: 0.2,
       duration: 2,
     });
+
+    // FORSIDE TEKST
+    gsap.from("#text-front p", {
+      x: 200,
+      opacity: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#text-front p",
+        start: "top center",
+        end: "bottom 50%",
+      },
+    });
   });
 
 // STOR SKÆRM >1700px
@@ -147,7 +147,7 @@ gsap
       scrollTrigger: {
         trigger: ".header-img",
         start: "top 50%",
-        end: "+=1100px",
+        end: "+=1200px",
         scrub: true,
       },
     });
