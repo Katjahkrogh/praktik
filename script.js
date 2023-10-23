@@ -2,10 +2,8 @@
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   //FRITID TEKST
   gsap.from("#textbox", {
-    y: 50,
     ease: "linear",
     opacity: 0,
-    // duration: 2,
     scrollTrigger: {
       trigger: "#textbox",
       start: "top 50%",
@@ -16,13 +14,11 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
 
   // OM MIG TEKST
   gsap.from("#om p", {
-    y: 50,
     ease: "linear",
     opacity: 0,
-    // duration: 2,
     scrollTrigger: {
       trigger: "#om p",
-      start: "top center",
+      start: "top 50%",
       end: "+=100px",
       scrub: 0.2,
     },
@@ -37,9 +33,9 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   gsap.to(h3, {
     scrollTrigger: {
       trigger: content,
-      start: "top center",
-      end: "bottom center",
-      scrub: 0.5,
+      start: "top 80%",
+      end: "+=300px",
+      scrub: 0.2,
     },
     color: "#f26849",
   });
@@ -47,9 +43,9 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   gsap.to(text, {
     scrollTrigger: {
       trigger: content,
-      start: "top center",
-      end: "bottom center",
-      scrub: 0.5,
+      start: "top 80%",
+      end: "+=300px",
+      scrub: 0.2,
     },
     color: "white",
   });
@@ -57,9 +53,9 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   gsap.to(h2, {
     scrollTrigger: {
       trigger: content,
-      start: "top center",
-      end: "bottom center",
-      scrub: 0.5,
+      start: "top 80%",
+      end: "+=300px",
+      scrub: 0.2,
     },
     color: "white",
   });
@@ -67,9 +63,9 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   gsap.to(content, {
     scrollTrigger: {
       trigger: content,
-      start: "top center",
-      end: "bottom center",
-      scrub: 0.5,
+      start: "top 80%",
+      end: "+=300px",
+      scrub: 0.2,
     },
     backgroundColor: "black",
   });
@@ -77,16 +73,14 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   gsap.from(".grid", {
     scale: 0.5,
     opacity: 0,
-    y: 50,
-    stagger: 0.1,
+    y: 40,
     overflow: "hidden",
     ease: "linear",
-    duration: 3,
     scrollTrigger: {
       trigger: ".grid",
-      start: "top 70%",
-      end: "+=100px",
-      scrub: 0.5,
+      start: "top 80%",
+      end: "+=300px",
+      scrub: 0.2,
     },
   });
 });
@@ -112,25 +106,12 @@ gsap
       y: 750,
     });
 
-    const h1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "h1",
-        start: "top 50%",
-        end: "+=200px",
-      },
-    });
-
-    h1.from("h1", {
-      x: 200,
-      scale: 0.2,
-      duration: 2,
-    });
-
     // FORSIDE TEKST
     gsap.from("#text-front p", {
       x: 200,
       opacity: 0,
-      duration: 2,
+      duration: 0.5,
+      ease: "ease.out",
       scrollTrigger: {
         trigger: "#text-front p",
         start: "top center",
