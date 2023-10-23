@@ -2,7 +2,7 @@
 gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   // FORSIDE TEKST
   gsap.from("#text-front p", {
-    x: 500,
+    x: 200,
     opacity: 0,
     duration: 2,
     scrollTrigger: {
@@ -15,30 +15,28 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
   //FRITID TEKST
   gsap.from("#textbox", {
     y: 50,
-    stagger: 0.1,
-    ease: "ease.in",
+    ease: "linear",
     opacity: 0,
     duration: 3,
     scrollTrigger: {
       trigger: "#textbox",
       start: "top 50%",
       end: "+=300px",
-      scrub: true,
+      scrub: 0.5,
     },
   });
 
   // OM MIG TEKST
   gsap.from("#om p", {
     y: 50,
-    stagger: 0.1,
-    ease: "ease.in",
+    ease: "linear",
     opacity: 0,
     duration: 3,
     scrollTrigger: {
       trigger: "#om p",
       start: "top center",
       end: "+=250px",
-      scrub: true,
+      scrub: 0.5,
     },
   });
 
@@ -135,7 +133,7 @@ gsap
     });
 
     h1.from("h1", {
-      x: 600,
+      x: 200,
       scale: 0.2,
       duration: 2,
     });
