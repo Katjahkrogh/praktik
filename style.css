@@ -42,7 +42,7 @@ h3 {
 
 nav {
   background-color: var(--black);
-  height: 5svh;
+  height: fit-content;
   display: flex;
   justify-content: flex-end;
 }
