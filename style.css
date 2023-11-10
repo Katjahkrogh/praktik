@@ -45,6 +45,7 @@ nav {
   height: fit-content;
   display: flex;
   justify-content: flex-end;
+  z-index: 999;
 }
 
 #linkedin {
