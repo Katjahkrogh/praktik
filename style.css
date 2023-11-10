@@ -45,7 +45,6 @@ nav {
   height: fit-content;
   display: flex;
   justify-content: flex-end;
-  z-index: 999;
 }
 
 #linkedin {
@@ -70,7 +69,6 @@ header {
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
-  margin-top: -20px;
 }
 
 #text-front {
