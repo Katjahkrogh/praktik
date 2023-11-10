@@ -107,19 +107,6 @@ gsap
     }).to(".header-img", {
       y: 750,
     });
-
-    // FORSIDE TEKST
-    gsap.from("#text-front p", {
-      x: 200,
-      opacity: 0,
-      duration: 0.5,
-      ease: "ease.out",
-      scrollTrigger: {
-        trigger: "#text-front p",
-        start: "top center",
-        end: "bottom 50%",
-      },
-    });
   });
 
 // STOR SKÆRM >1700px
